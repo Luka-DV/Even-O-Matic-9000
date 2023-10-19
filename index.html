@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="color-scheme" content="light dark">
+
+		<title>Ultimate app</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Is Your Number Even?</h1>
+
+			<label for="numberInput">Input the desired number here*:</label>
+			<input id="numberInput" type="number" name="numberInput" value="">
+			<button type="button">Calculate</button>
+			<small>*Caution: The calculation is very complex so it might take some time to compute.</small>
+		</header>
+
+		<main>
+			<h2 id="resultDisplay"></h2>
+			<small></small>
+
+			<section id="loading" class="hidden">
+				<span id="calc">Calculating</span>
+				<span class="dots"></span>
+				<span class="dots"></span>
+				<span class="dots"></span>
+				<span class="dots"></span>
+			</section>
+
+			<dotlottie-player id="lottie" class="hidden" src="https://lottie.host/96e4422c-af32-4869-886b-0b84c75b0659/3kb5A2hxIE.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+
+			<aside id="adDisplay"></aside>
+		</main>
+		
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
+
+
+
