@@ -13,7 +13,7 @@ function Calculate() {
 
     fetch(url)
       .then(response => response.json())
-      .then(async data => {
+      .then(data => {
         console.log(data);
         adDisplay.innerText = data.ad;
 
